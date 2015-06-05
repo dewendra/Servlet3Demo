@@ -36,6 +36,7 @@ public class LoginPage extends HttpServlet {
 		s.write("<title>Register Page</title>");
 		s.write("<b>This is my first Servlet Page On Servlet 3.0");
 		s.write("<b>This is my Second change in my first Servlet Page On Servlet 3.0");
+		s.write("<b>This is my Second change in my first Servlet Page On Servlet 3.0");
 
 		s.write("</title>");
 
