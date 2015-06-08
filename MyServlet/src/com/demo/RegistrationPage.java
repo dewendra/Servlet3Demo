@@ -45,6 +45,7 @@ public class RegistrationPage extends HttpServlet {
 		s.write("<br><b><input type='submit'> ");
 		s.write("<br><br><button type='button' onclick='alert('Hello world!')'>Submit</button>");
 		s.write("</form>");
+		s.write("<Hello");
 
 		//s.write("<p>sbdcdbckdi</p>");
 		//s.write("<title>Register Page</title>");
