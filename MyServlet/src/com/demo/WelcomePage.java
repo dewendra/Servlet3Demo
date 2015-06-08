@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class WelcomePage
  */
-@WebServlet("/WelcomePage")
+@WebServlet("/WelcomePage.htm")
 public class WelcomePage extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,14 +29,15 @@ public class WelcomePage extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.setContentType("text/html");
-		PrintWriter welcome=response.getWriter();
-		welcome.write("<html>");
+		doPost(request, response);
+		//response.setContentType("text/html");
+		//PrintWriter welcome=response.getWriter();
+		/*welcome.write("<html>");
 		welcome.write("<body>");
 		welcome.write("<title>Welcome Page </title>");
 		welcome.write("Hello Welcome");
 		welcome.write("<body>");
-		welcome.write("</html>");
+		welcome.write("</html>");*/
 	}
 
 	/**
@@ -44,6 +45,9 @@ public class WelcomePage extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.getWriter().write("Welcome "+request.getParameter("username"));
+		
+		
 	}
 
 }
